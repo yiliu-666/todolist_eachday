@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的每日计划</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <h1>我的每日计划</h1>
+        
+        <div class="date-navigation">
+            <button id="prev-date" class="date-nav-btn">&lsaquo;</button>
+            <div id="current-date" class="current-date"></div>
+            <button id="next-date" class="date-nav-btn">&rsaquo;</button>
+            <button id="today-btn" class="today-btn">今天</button>
+        </div>
+        
+        <div class="calendar-toggle">
+            <button id="show-calendar-btn">查看日历</button>
+        </div>
+        
+        <div id="calendar-view" class="calendar-container">
+            <h2>30天任务记录</h2>
+            <div class="calendar-grid" id="calendar-grid">
+                <!-- 日历将通过JavaScript动态添加 -->
+            </div>
+            <div class="calendar-legend">
+                <div class="legend-item">
+                    <span class="legend-icon completed">★</span>
+                    <span>全部完成</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-icon incomplete">✗</span>
+                    <span>部分完成/未完成</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-icon">·</span>
+                    <span>无任务</span>
+                </div>
+            </div>
+            <button id="hide-calendar-btn" class="hide-calendar-btn">返回任务列表</button>
+        </div>
+        
+        <div id="tasks-view">
+            <div class="add-task">
+                <input type="text" id="new-task" placeholder="添加新计划..." autofocus>
+                <button id="add-btn">添加</button>
+            </div>
+            
+            <div class="task-filters">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="pending">待做</button>
+                <button class="filter-btn" data-filter="completed">已做</button>
+            </div>
+            
+            <ul id="task-list">
+                <!-- 任务将通过JavaScript动态添加 -->
+            </ul>
+        </div>
+        
+        <div class="date-summary" id="date-summary">
+            <!-- 日期摘要将通过JavaScript动态添加 -->
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

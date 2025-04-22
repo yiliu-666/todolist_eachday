@@ -1,0 +1,79 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "英语打卡",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "title": "健身",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "title": "文档撰写完成百分之20",
+      "completed": false
+    },
+    {
+      "id": 4,
+      "title": "英语打卡",
+      "completed": false,
+      "date": "2025-04-22"
+    },
+    {
+      "id": 5,
+      "title": "健身----背",
+      "completed": true,
+      "date": "2025-04-22"
+    },
+    {
+      "id": 6,
+      "title": "项目完成百分之20",
+      "completed": false,
+      "date": "2025-04-22"
+    },
+    {
+      "id": 7,
+      "title": "健身----背",
+      "completed": false,
+      "date": "2025-04-22"
+    },
+    {
+      "id": 8,
+      "title": "啊手动阀手动阀a",
+      "completed": true,
+      "date": "2025-04-21"
+    },
+    {
+      "id": 9,
+      "title": "阿斯顿发射点d阿斯蒂芬",
+      "completed": true,
+      "date": "2025-04-21"
+    },
+    {
+      "id": 10,
+      "title": "阿斯蒂芬",
+      "completed": true,
+      "date": "2025-04-21"
+    },
+    {
+      "id": 11,
+      "title": "昂丹",
+      "completed": true,
+      "date": "2025-04-21"
+    }
+  ],
+  "dailyStatus": {
+    "2025-04-22": {
+      "total": 4,
+      "completed": 1,
+      "allCompleted": false
+    },
+    "2025-04-21": {
+      "total": 4,
+      "completed": 4,
+      "allCompleted": true
+    }
+  }
+}
